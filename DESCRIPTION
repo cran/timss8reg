@@ -1,0 +1,39 @@
+Package: timss8reg
+Type: Package
+Title: Helper Functions for Regression Analysis of TIMSS Grade 8
+        Student Data
+Version: 0.1.0
+Authors@R: c(
+    person("Elfin Harse Saputra", "Harefa",
+           email = "elfinharsesaputraharefaa@gmail.com",
+           role = c("aut", "cre")),
+    person("Fadhlul", "Mubarak",
+           email = "mubarakfadhlul@gmail.com",
+           role = "aut"))
+Description: Tools for reading Trends in International Mathematics and Science
+    Study (TIMSS) international database files stored in R format
+    <https://timss2023.org/data/>, merging the student questionnaire and student
+    achievement files, and preparing questionnaire variables (missing-value
+    codes, reversed agreement scales and yes/no items). The package also fits
+    a multiple linear regression of the average of the five plausible values
+    on selected predictors, reporting standardized coefficients, correlations
+    and variance inflation factors, and provides heteroscedasticity diagnostics
+    (Breusch-Pagan test and HC3 robust standard errors). Sampling weights and
+    replicate weights are not applied; for design-based estimation see the
+    packages 'intsvy' and 'RALSA'.
+License: GPL-3
+Encoding: UTF-8
+Language: en
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: lmtest, sandwich, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2026-10-31 10:14:55 UTC; root
+Author: Elfin Harse Saputra Harefa [aut, cre],
+  Fadhlul Mubarak [aut]
+Maintainer: Elfin Harse Saputra Harefa <elfinharsesaputraharefaa@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-11-18 10:00:02 UTC
